@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ExercicioDIO6 {
+public class DIO_Exercicio6 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Informe a sua altura: ");

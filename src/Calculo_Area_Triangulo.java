@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AreaTriangulo {
+public class Calculo_Area_Triangulo {
     
     public static void main(String[] args) {
         System.out.println("Informe a altura do triângulo:");

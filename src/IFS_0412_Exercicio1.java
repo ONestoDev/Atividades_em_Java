@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Exercicio1IFS0412 {
+public class IFS_0412_Exercicio1 {
         public static void main(String[] args) {
             Random random = new Random();
             int contMenor5 = 0;

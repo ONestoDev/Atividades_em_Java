@@ -1,4 +1,4 @@
-public class ExercicioDIO5 {
+public class DIO_Exercicio5 {
     public static void main(String[] args) {
         var leitor = new java.util.Scanner(System.in);
         System.out.println("Informe um numero pra ver sua tabuada: ");

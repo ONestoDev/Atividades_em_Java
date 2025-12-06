@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ExercicioDIO2 {
+public class DIO_Exercicio2 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Informe o tamanho do lado do quadrado: ");

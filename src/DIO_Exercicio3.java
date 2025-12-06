@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ExercicioDIO3 {
+public class DIO_Exercicio3 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Informe a base do retângulo: ");

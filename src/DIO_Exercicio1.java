@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ExercicioDIO1 {
+public class DIO_Exercicio1 {
     public static void main(String[] args) {
         System.out.println("Informe o seu nome: ");
         Scanner scanner = new Scanner(System.in);

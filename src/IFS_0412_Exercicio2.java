@@ -8,7 +8,7 @@ M: 60 16 76 36 44 */
 
 import java.util.Random;
 
-public class Exercicio2IFS0412 {
+public class IFS_0412_Exercicio2 {
     public static void main(String[] args) {
         Random random = new Random();
         int[] V = new int[5];

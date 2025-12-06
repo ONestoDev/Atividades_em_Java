@@ -1,7 +1,7 @@
 import java.time.OffsetDateTime;
 import java.util.Scanner;
 
-public class Idade {
+public class Informa_Idade {
 
     public static void main(String[] args) {
         var anoBase = OffsetDateTime.now().getYear();

@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exemplo0112 {
+public class IFS_0112_Exercicio1 {
     public static void main(String[] args) {
         Random random = new Random();
         int idade, peso, contIdoso, i;

@@ -7,7 +7,7 @@ população da cidade A ultrapasse
 ou iguale a população da cidade B, mantidas as taxas de crescimento.
 Número de anos: 8 */
 
-public class Exercicio3IFS0412 {
+public class IFS_0412_Exercicio3 {
 
     public static void main(String[] args) {
 

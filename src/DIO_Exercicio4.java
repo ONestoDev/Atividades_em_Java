@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ExercicioDIO4 {
+public class DIO_Exercicio4 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.print("Informe o nome da pessoa mais velha: ");

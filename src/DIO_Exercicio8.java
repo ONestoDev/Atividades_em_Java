@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ExercicioDIO8 {
+public class DIO_Exercicio8 {
 
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
