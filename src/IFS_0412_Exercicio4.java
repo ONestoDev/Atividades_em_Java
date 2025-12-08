@@ -19,7 +19,8 @@ public class IFS_0412_Exercicio4 {
         double menorNota = 11;
 
         // Encontrando a maior e a menor nota
-        for (double nota : vNotas) {
+        for (int j = 0; j < vNotas.length; j++) {
+            double nota = vNotas[j];
             if (nota > maiorNota) {
                 maiorNota = nota;
             }
@@ -29,34 +30,36 @@ public class IFS_0412_Exercicio4 {
         }
         // Adicionando notas válidas ao vetor vNotasValidas
         int i = 0;
-        for (double nota : vNotas) {
+        for (int j = 0; j < vNotas.length; j++) {
+            double nota = vNotas[j];
             if (nota != maiorNota && nota != menorNota) {
-                vNotasValidas[i] = nota;
-                i++;
+                if (i < vNotasValidas.length) {
+                    vNotasValidas[i] = nota;
+                    i++;
+                }
             }
         }
-
-        // Calculando a média das notas válidas
+        // Calculando a média das notas
         double soma = 0;
-        for (double nota : vNotasValidas) {
-            soma += nota;
+        for (int j = 0; j < vNotasValidas.length; j++) {
+            soma += vNotasValidas[j];
         }
         double media = soma / vNotasValidas.length;
         DecimalFormat df = new DecimalFormat("0.0");
 
         // Exibindo os resultados
         System.out.print("vNotas : ");
-        for (double nota : vNotas) {
-            System.out.print(nota + " ");
+        for (int j = 0; j < vNotas.length; j++) {
+            System.out.print(vNotas[j] + " ");
         }
         System.out.println();
 
-        System.out.print("nNotasValidas : ");
-        for (double nota : vNotasValidas) {
-            System.out.print(nota + " ");
+        System.out.print("nNotasValidas: ");
+        for (int j = 0; j < vNotasValidas.length; j++) {
+            System.out.print(vNotasValidas[j] + " ");
         }
         System.out.println();
 
-        System.out.print("Média : " + df.format(media));
+        System.out.print("Média: " + df.format(media));
     }
 }

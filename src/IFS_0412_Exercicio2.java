@@ -14,7 +14,7 @@ public class IFS_0412_Exercicio2 {
         int[] V = new int[5];
         int[] M = new int[5];
         int menor = 21;
-        // Gerar 5 números aleatórios e encontrar o menor
+        // Gerando 5 números aleatórios e encontrar o menor
         for (int i = 0; i < V.length; i++) {
             int numero = random.nextInt(20 + 1);
             V[i] = numero; // Números entre 0 e 20
@@ -22,11 +22,11 @@ public class IFS_0412_Exercicio2 {
                 menor = V[i];
             }
         }
-        // Preencher o vetor M com os elementos de V multiplicados pelo menor número
+        // Preenchendo o vetor M com os elementos de V multiplicados pelo menor número
         for (int i = 0; i < V.length; i++) {
             M[i] = V[i] * menor;
         }
-        // Exibir os vetores e o menor número
+        // Exibindo os vetores e o menor número
         System.out.print("V: ");
         for (int num : V) {
             System.out.print(" " + num);
