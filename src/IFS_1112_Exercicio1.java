@@ -27,7 +27,7 @@ public class IFS_1112_Exercicio1 {
     public static void main(String[] args) {
         String[] sistemasOperacionais = { "Windows Server", "Unix", "Linux",
                 "Netware", "Mac OS", "Outro"};
-        int[] votos = new int[7];
+        int[] votos = new int[6];
         int totalVotos = 0;
         Random random = new Random();
 
@@ -37,23 +37,23 @@ public class IFS_1112_Exercicio1 {
                 break;
             }
             if (resposta >= 1 && resposta <= 6) {
-                votos[resposta]++;
+                votos[resposta - 1]++;
                 totalVotos++;
             }
         }
         System.out.println("Sistema Operacional\t\tVotos\t\t%");
         System.out.println("-------------------    --------   ----------");
 
-        int maiorVotos = 1;
+        int maiorVotos = 0;
 
-        for (int i = 1; i <= 6; i++) {
+        for (int i = 0; i < votos.length; i++) {
             double percentual = (votos[i] * 100.0) / totalVotos;
 
             if (votos[i] > votos[maiorVotos]) {
                 maiorVotos = i;
             }
             System.out.printf("%-18s\t\t%5d\t\t%3.2f%%\n",
-                    sistemasOperacionais[i - 1], votos[i], percentual);
+                    sistemasOperacionais[i], votos[i], percentual);
         }
         System.out.println("----------------------   --------");
         System.out.printf("Total                \t %4d%n%n", totalVotos);
@@ -61,6 +61,6 @@ public class IFS_1112_Exercicio1 {
         double percVencedor = (votos[maiorVotos] * 100.0) / totalVotos;
         System.out.printf(
                 "O Sistema Operacional mais votado foi o %s, com %d votos, correspondendo a %.0f%% dos votos.%n",
-                sistemasOperacionais[maiorVotos - 1], votos[maiorVotos],percVencedor);
+                sistemasOperacionais[maiorVotos], votos[maiorVotos],percVencedor);
     }
 }
