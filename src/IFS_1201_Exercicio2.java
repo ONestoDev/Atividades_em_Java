@@ -1,3 +1,5 @@
+// Autor: Ernesto Santana
+
 import java.util.Random;
 
 public class IFS_1201_Exercicio2 {

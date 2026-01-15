@@ -10,7 +10,7 @@ public class IFS_1201_Exercicio1 {
         System.out.print("Digite uma frase: ");
         String frase = scanner.nextLine().toLowerCase();
 
-        int[] vogaisCount = new int[5]; // Índices: 0 - a, 1 - e, 2 - i, 3 - o, 4 - u
+        int[] vogaisCount = new int[5];
 
         for (int i = 0; i < frase.length(); i++) {
             char caractere = frase.charAt(i);
