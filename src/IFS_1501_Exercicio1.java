@@ -18,6 +18,8 @@ Matriz Gerada:
 Soma da Diagonal Principal (10 + 22 + 11 + 49): 92
 Soma da Diagonal Secundária (13 + 18 + 33 + 42): 106 */
 
+import java.util.Random;
+
 public class IFS_1501_Exercicio1 {
     public static void main(String[] args) {
         int N = 4;
@@ -25,10 +27,12 @@ public class IFS_1501_Exercicio1 {
         int somaDiagonalPrincipal = 0;
         int somaDiagonalSecundaria = 0;
 
+        Random rand = new Random();
+
         // Preenchendo a matriz com números aleatórios e calculando as somas
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                matriz[i][j] = (int) (Math.random() * 50) + 1; // Números entre 1 e 50
+                matriz[i][j] = rand.nextInt(50) + 1; // Números entre 1 e 50
                 if (i == j) {
                     somaDiagonalPrincipal += matriz[i][j];
                 }
@@ -41,18 +45,17 @@ public class IFS_1501_Exercicio1 {
         // Exibindo a matriz
         System.out.println("Matriz Gerada:");
         for (int i = 0; i < N; i++) {
-            System.out.print("[");
             for (int j = 0; j < N; j++) {
                 System.out.print(matriz[i][j]);
                 if (j < N - 1) {
-                    System.out.print(", ");
+                    System.out.print(" ");
                 }
             }
-            System.out.println("]");
+            System.out.println("\t");
         }
 
         // Exibindo os resultados
-        System.out.println("--- Resultados ---");
+        System.out.println("* * * Resultados * * *");
         System.out.println("Soma da Diagonal Principal: " + somaDiagonalPrincipal);
         System.out.println("Soma da Diagonal Secundária: " + somaDiagonalSecundaria);
     }
