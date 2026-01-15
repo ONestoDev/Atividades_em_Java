@@ -18,6 +18,8 @@ Matriz Gerada:
 Soma da Diagonal Principal (10 + 22 + 11 + 49): 92
 Soma da Diagonal Secundária (13 + 18 + 33 + 42): 106 */
 
+import java.util.Random;
+
 public class IFS_1501_Exercicio1 {
     public static void main(String[] args) {
         int N = 4;
@@ -26,9 +28,10 @@ public class IFS_1501_Exercicio1 {
         int somaDiagonalSecundaria = 0;
 
         // Preenchendo a matriz com números aleatórios e calculando as somas
+        Random rand = new  Random();
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                matriz[i][j] = (int) (Math.random() * 50) + 1; // Números entre 1 e 50
+                matriz[i][j] = rand.nextInt(50) + 1; // Números entre 1 e 50
                 if (i == j) {
                     somaDiagonalPrincipal += matriz[i][j];
                 }
@@ -52,7 +55,7 @@ public class IFS_1501_Exercicio1 {
         }
 
         // Exibindo os resultados
-        System.out.println("--- Resultados ---");
+        System.out.println("* * * Resultados * * *");
         System.out.println("Soma da Diagonal Principal: " + somaDiagonalPrincipal);
         System.out.println("Soma da Diagonal Secundária: " + somaDiagonalSecundaria);
     }
