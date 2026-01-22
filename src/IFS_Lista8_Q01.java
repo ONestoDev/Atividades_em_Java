@@ -65,9 +65,13 @@ public class IFS_Lista8_Q01 {
         }
         System.out.println("\nMédia das Idades Pares: " + mediaP);
 
-        System.out.println("Media das Idades Ímpares: " + mediaI);
-        for (int i = 0; i < countI; i++) {
+        System.out.println();
+        System.out.println("Idades Ìmpares: ");
+        for (int i = 0; i < countP; i++) {
             System.out.print(I[i] + " ");
         }
+        System.out.println();
+        System.out.println("Media das Idades Ímpares: " + mediaI);
+
     }
 }
