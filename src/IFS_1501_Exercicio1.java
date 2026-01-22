@@ -27,6 +27,8 @@ public class IFS_1501_Exercicio1 {
         int somaDiagonalPrincipal = 0;
         int somaDiagonalSecundaria = 0;
 
+        Random rand = new Random();
+
         // Preenchendo a matriz com números aleatórios e calculando as somas
         Random rand = new  Random();
         for (int i = 0; i < N; i++) {
@@ -44,14 +46,13 @@ public class IFS_1501_Exercicio1 {
         // Exibindo a matriz
         System.out.println("Matriz Gerada:");
         for (int i = 0; i < N; i++) {
-            System.out.print("[");
             for (int j = 0; j < N; j++) {
                 System.out.print(matriz[i][j]);
                 if (j < N - 1) {
-                    System.out.print(", ");
+                    System.out.print(" ");
                 }
             }
-            System.out.println("]");
+            System.out.println("\t");
         }
 
         // Exibindo os resultados
