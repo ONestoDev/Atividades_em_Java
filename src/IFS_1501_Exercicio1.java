@@ -30,7 +30,6 @@ public class IFS_1501_Exercicio1 {
         Random rand = new Random();
 
         // Preenchendo a matriz com números aleatórios e calculando as somas
-        Random rand = new  Random();
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 matriz[i][j] = rand.nextInt(50) + 1; // Números entre 1 e 50
