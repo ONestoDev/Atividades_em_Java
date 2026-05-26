@@ -1,4 +1,4 @@
-package IFS;
+package IFS.Monitoria;
 // Elabore um programa para gerar 100 números (até 200) que representam as velocidades
 // registradas por diversos carros em um radar na BR 101 próximo a cidade de Estância/SE.
 // Considere os 50 valores iniciais no turno da manhã e os demais no turno da tarde.
