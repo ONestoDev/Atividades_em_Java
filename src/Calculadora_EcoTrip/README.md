@@ -18,7 +18,7 @@ Calculadora semântica em HTML5 para estimar emissões de CO₂ por transporte e
     - `index.html` — interface principal
     - `css/style.css` — estilos (referenciado em `index.html`)
     - `js/` — scripts (populam o `datalist` e realizam cálculos)
-- Outros módulos Java/JavaScript conforme o repositório
+- Javanauta módulos Java/JavaScript conforme o repositório
 
 ## Como executar (frontend)
 1. Abra `src/Calculadora_EcoTrip/index.html` em um navegador moderno.
