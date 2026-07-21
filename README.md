@@ -114,9 +114,7 @@ Atividades_em_Java/
 │   │   ├── IfElse.java
 │   │   ├── SwitchCase.java
 │   │   └── Wilhe.java
-│   │
-│   └── Calculadora_EcoTrip/
-│
+│     
 └── README.md
 ```
 
@@ -130,7 +128,6 @@ Atividades_em_Java/
 | `Estácio`             | Atividades acadêmicas realizadas durante a graduação                     |
 | `IFS`                 | Listas, avaliações e exercícios do Instituto Federal de Sergipe          |
 | `Javanauta`           | Exercícios introdutórios de sintaxe e lógica                             |
-| `Calculadora_EcoTrip` | Projeto frontend relacionado a cálculo de emissões                       |
 
 ---
 
